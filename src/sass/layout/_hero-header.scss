@@ -7,21 +7,21 @@
     @media screen and (min-width: 320px) and (max-width:767px) {
     overflow: hidden;
     padding: 0 20px;
-    max-width: 320px;
+    max-width: 280px;
     }
   
     @media screen and (min-width: 768px) {
         padding: 0 34px;
        background-color: teal;
        outline: tomato solid 2px;
-       width: 768px;
+       width: 700px;
     }
   
     @media screen and (min-width: 1280px) {
       background-color: violet;
       outline: yellowgreen 2px solid;
-       width: 1080px;
-       padding: 0 15px;
+       width: 1050px;
+       padding: 0 115px;
     }
   }
 
@@ -42,9 +42,9 @@
      width: 768px;
      height: 353px;
 }  
-@media screen and (min-width:1280px) {   
-    max-width: 1280px;
-    height: 665px;
+@media screen and (min-width:1200px) {   
+    width: 1280px;
+    height: 578px;
 }       
   }
  
@@ -52,12 +52,16 @@
     z-index: 2;
     position: absolute;
  @media screen and (min-width:320px) {
-    right:82px ;
+    left: 20px;
     top: 137px;      
  }   
  @media screen and (min-width:768px) {
-   right: 572px;
+   left: 34px;
    top: 56px;
+ }
+ @media screen and (min-width:1200px) {
+   top: 84px;
+   left: 115px;
  }
 }
   .hero__title{
@@ -89,7 +93,7 @@
       }
     
   }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width:1200px) {
     width: 277px;
     font-size: 38px;
       line-height: 1.15;
@@ -107,7 +111,7 @@
     @media screen and (min-width:768px) {
       margin-top: 20px;
     }
-    @media screen and (min-width:1280px) {
+    @media screen and (min-width:1200px) {
       margin-top: 25px;
     }
   }
@@ -130,7 +134,7 @@
       font-size: 8px;
       line-height: 1.25;
     }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width:1200px) {
       width: 102px;
       height: 40px;
       font-size: 14px;
@@ -154,7 +158,7 @@
     font-size: 8px;
     line-height: 1.25;
   }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width:1200px) {
       width: 138px;
       height: 40px;
       font-size: 14px;
@@ -176,7 +180,9 @@
        width: 143px;
        height: 336px;
    }  
-   @media screen and (min-width:1280px) {
+   @media screen and (min-width:1200px) {
+      left: 594px;
+      bottom: 21px;
       width: 236px;
       height: 557px; 
    }
@@ -199,7 +205,9 @@
         height: 322px;
         
     }  
-    @media screen and (min-width:1280px) {
+    @media screen and (min-width:1200px) {
+     left: 475px;
+     bottom: 75px;
      width: 538px;
      height: 548px; 
     }    
@@ -218,22 +226,10 @@
   //   height: 100%;
   // }  
   // }
-  .hero-card{
-    z-index: 1;
-    @media screen and (min-width:320px) and (max-width: 767px) {
-      display: none;
-    } 
-    @media screen and (min-width:768px) {
-      position: absolute;
-      left: 691px;
-      top: 48px;
-      width: 43px;
-      height: 44px;
-
-    }
   
-  }
  .hero-card__title{
+  z-index: 1;
+  position: absolute;
   font-family: $secondary-font;
   font-style: normal;
   font-weight: 400;
@@ -250,10 +246,15 @@
   font-size: 28px;
   line-height: 1.14;
 }
+@media screen and (min-width:1200px) {
+  top: 73px;
+  left: 1111px;
+  font-size: 46px;
+  line-height: 1.15;
+}
  }
 .hero-card__text{
   position: absolute;
-  height: 100%;
   font-family: $main-font;
   font-style: normal; 
   font-weight: 400;
@@ -262,18 +263,20 @@
     display: none;
   }
   @media screen and (min-width:768px) {
-    
-    left: 10px;
-    position: absolute;
+    left: 704px;
+    top: 82px;
     font-size: 8px;
     line-height: 1.25;
-    
+  @media screen and (min-width:1200px) {
+    left: 1130px;
+    top: 128px;
+    font-size: 14px;
+  line-height: 1.28;
+  }  
 
     }
 } 
 .hero-card__elipse{
-  width: 16px;
-  height: 16px;
   border-radius: 50%;
   background-color: $primary-bg-color;
   @media screen and (min-width:320px) and (max-width: 767px) {
@@ -283,24 +286,20 @@
   position: absolute;
   top: 48px;
   left: 718px;
-  
+  width: 16px;
+  height: 16px;
+}
+@media screen and (min-width:1200px) {
+  left: 1153px;
+  top: 69px;
+  height: 30px;
+  width: 30px;
 }
 }
 
-.hero-card-second{
-  @media screen and (min-width:320px) and (max-width: 767px) {
-    display: none;
-  } 
-  @media screen and (min-width:768px) {
-    width: 51px;
-    position: absolute;
-    left: 691px;
-    top: 105px;
-    z-index: 1;
-  }
-
-}
 .hero-card-second__title{
+position: absolute;
+z-index: 1;
 font-family: $secondary-font;
 font-style: normal;
 font-weight: 400;
@@ -312,14 +311,20 @@ color: $primary-accent-color;
   display: none;
 }
 @media screen and (min-width:768px) {
-left: 691px;
-top: 50px;
+left: 690px;
+top: 106px;
 font-size: 28px;
 line-height: 1.14;
 }
+@media screen and (min-width:1200px) {
+  top: 164px;
+  left: 1106px; 
+  font-size: 46px;
+  line-height: 1.15;
 }
+}
+
 .hero-card-second__text{
- width: 100%;
 position: absolute;
 font-family: $main-font;
 font-style: normal; 
@@ -329,26 +334,67 @@ color: $primary-bg-color;
   display: none;
 }
 @media screen and (min-width:768px) {
-  right: 7px;
+  top: 138px;
+  left: 683px;
   position: absolute;
   font-size: 8px;
   line-height: 1.25;
-  
-
   }
+@media screen and (min-width:1200px) {
+  left: 1091px;
+  top: 219px;
+  font-size: 14px;
+  line-height: 1.28;
+  
+}
 } 
 .hero-card-second__elipse{
-width: 16px;
-height: 16px;
+
 border-radius: 50%;
 background-color: $primary-bg-color;
 @media screen and (min-width:320px) and (max-width: 767px) {
   display: none;
 }
 @media screen and (min-width:768px) {
+  width: 16px;
+  height: 16px;
   position: absolute;
   top: 105px;
   left: 718px;
+}
+@media screen and (min-width:1200px) {
+  top: 161px;
+  left: 1153px;
+  height: 30px;
+  width: 30px;
+}
+}
 
+.hero__description{
+font-family: $main-font;
+font-style: normal;
+font-weight: 400;
+color: $primary-bg-color;
+position: absolute;
+@media screen and (min-width:320px) and (max-width:767px){
+ display: none;
+}
+@media screen and (min-width:768px) {
+  left: 154px;
+  bottom: 59px;
+  width: 114px;
+  height: 48px;
+  font-size: 8px;
+  line-height: 1.5;
+ 
+}
+@media screen and (min-width:1200px) {
+  left: 295px;
+  bottom: 102px;
+  width: 200px;
+  height: 78px;
+  font-size: 14px;
+  line-height: 1.14;
+   
 }
 }
